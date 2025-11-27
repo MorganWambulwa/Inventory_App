@@ -11,8 +11,11 @@ def add_item(request):
         name = request.POST.get('name')
         price = request.POST.get('price')
         description = request.POST.get('description')
+        brand = request.POST.get('brand')
+        category = request.POST.get('category')
+        quantity = request.POST.get('quantity')
         
-        Product.objects.create(name=name, price=price, description=description)
+        Product.objects.create(name=name, price=price, description=description, brand=brand, category=category, quantity=quantity)
         return redirect('admin')
     return render(request, 'add_item.html')
 
