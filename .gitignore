@@ -1,12 +1,12 @@
-.env
+# Python cache
 __pycache__/
 *.py[cod]
-*$py.class
 
+# Environment variables
+.env
+
+# Database
 db.sqlite3
 
-.vscode/
-
-.DS_Store
-
-*.log
+# IDE files
+.idea/
