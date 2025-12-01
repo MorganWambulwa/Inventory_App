@@ -24,5 +24,6 @@ urlpatterns = [
     path('', views.admin, name='admin'),
     path('add_item/', views.add_item, name='add_item'),
     path('delete/<int:id>/', views.delete_item, name='delete'),
-    path('update/<int:id>/', views.update_item, name='update')
+    path('update/<int:id>/', views.update_item, name='update'),
+    path('mpesa_pay/', views.mpesa_pay, name='mpesa_pay')
 ]
